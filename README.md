@@ -1,6 +1,8 @@
 # Automated UI Tests for DemoQA
 
-This repository contains automated UI tests written using Python + Playwright + Pytest to test the [DemoQA](https://demoqa.com) website.
+[![Build Status](https://github.com/Vladelin/playwright-ui-tests/actions/workflows/playwright-tests.yml/badge.svg )](https://github.com/Vladelin/playwright-ui-tests/actions/workflows/playwright-tests.yml )
+
+This repository contains automated UI tests written using Python + Playwright + Pytest.
 
 ## 🧪 Features
 - Written in Python with Playwright and Pytest
