@@ -1,0 +1,45 @@
+# Python
+__pycache__
+*.pyc
+.pytest_cache/
+.coverage*
+htmlcov/
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Playwright
+playwright/.cache/
+playwright/report/
+playwright/results/
+playwright/debugger.log
+
+# GitHub Actions artifacts
+__pycache__
+dist/
+build/
+*.egg-info/
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Spotlight-V900
+.Trashes
+ehthumbs.db
+Thumbs.db
