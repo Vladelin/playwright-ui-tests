@@ -3,13 +3,13 @@ import time  # Для задержки
 
 from playwright.sync_api import Page
 
-from playwright.sync_api import Page
-
-from playwright.sync_api import Page
+def test_alert_return(page:Page):
+    page.set_default_timeout(30000)
+    page.goto("https://demoqa.com/alerts",wait_until="domcontentloaded",timeout=60000)
 
 def test_alert_accept(page: Page):
-    page.set_default_timeout(40000)
-    page.goto("https://demoqa.com/alerts ", wait_until="domcontentloaded", timeout=60000)
+    page.set_default_timeout(60000)
+    page.goto("https://demoqa.com/alerts ", wait_until="domcontentloaded", timeout=40000)
 
     # Ждём появление второй кнопки "Click me"
     page.wait_for_selector("text=Click me")
@@ -36,3 +36,6 @@ def test_confirm_box_result(page: Page):
     # Принимаем confirm
     dialog = page.wait_for_event('dialog', timeout=30000)
     dialog.accept()
+
+
+
