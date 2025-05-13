@@ -1,5 +1,9 @@
 from playwright.sync_api import Page, expect
 
+
+def test_basic(page:Page):
+    page.goto("https://demoqa.com/ ", wait_until="domcontentloaded", timeout=60000)
+
 def test_click_on_elements_and_check_navigation(page: Page):
     page.goto("https://demoqa.com/ ", wait_until="domcontentloaded", timeout=60000)
     page.click("text=Elements")
